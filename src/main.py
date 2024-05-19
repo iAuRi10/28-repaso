@@ -4,10 +4,10 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
+
 @app.get("/")
 def read_root():
     return {"Hello": "Mundo3 --> Auri"}
-
 
 
 @app.get("/items/{item_id}")
